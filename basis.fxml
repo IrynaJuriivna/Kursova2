@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="550.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerBasis">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="54.0" prefHeight="70.0" prefWidth="488.0" style="-fx-background-color: #FFFFF0;" text="Оберіть розмір кросворду:" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="54.0">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="ListSaved" layoutX="66.0" layoutY="414.0" prefHeight="34.0" prefWidth="434.0" style="-fx-background-color: #FFFFF0;" />
+      <SplitPane dividerPositions="0.3317307692307692, 0.6634615384615384" layoutX="169.0" layoutY="149.0" orientation="VERTICAL" prefHeight="210.0" prefWidth="210.0" style="-fx-background-color: #ADD8E6;" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="150.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="ButtonSize5" mnemonicParsing="false" prefHeight="67.0" prefWidth="208.0" style="-fx-background-color: #FFFFF0;" text="5×5">
+                     <font>
+                        <Font name="System Italic" size="26.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="ButtonSize10" mnemonicParsing="false" prefHeight="67.0" prefWidth="208.0" style="-fx-background-color: #FFFFF0;" text="10×10">
+               <font>
+                  <Font name="System Italic" size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonSize15" mnemonicParsing="false" prefHeight="67.0" prefWidth="208.0" style="-fx-background-color: #FFFFF0;" text="15×15">
+               <font>
+                  <Font name="System Italic" size="26.0" />
+               </font>
+            </Button>
+        </items>
+      </SplitPane>
+      <Button fx:id="OutButton" layoutX="369.0" layoutY="550.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #FFFFF0;" text="Вийти" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font name="System Italic" size="34.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
